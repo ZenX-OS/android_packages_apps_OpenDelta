@@ -17,10 +17,10 @@
 */
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="11dp"
-    android:height="18dp"
-    android:viewportWidth="312.000000"
-    android:viewportHeight="512.000000">
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
     <path
         android:fillColor="?android:attr/colorAccent"
         android:pathData="M22.2266 18.2815C20.7158 19.6596 18.7061 20.5 16.5 20.5C11.8056 20.5 8 16.6944 8 12C8 10.2744 8.51418 8.66898 9.39768 7.32847C4.95465 7.06836 2.00761 11.5304 3.00001 15.5C2.5 15.5 1.00001 15 0.165924 14C1.11808 19.6754 6.05402 24 12 24C16.3245 24 20.1147 21.7125 22.2266 18.2815Z" />
