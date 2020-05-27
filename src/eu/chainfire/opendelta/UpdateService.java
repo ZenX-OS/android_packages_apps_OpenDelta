@@ -946,7 +946,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 String[] parts = fileName.split("-");
                 if (parts.length > 1) {
                     Logger.d("isMatchingImage: check " + fileName);
-                    String version = parts[1];
+                    String version = parts[2].substring(1);
                     Version current = new Version(config.getAndroidVersion());
                     Version fileVersion = new Version(version);
                     if (fileVersion.compareTo(current) >= 0) {
@@ -2199,8 +2199,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         boolean updateAvilable = false;
                         if (latestFullZip != null) {
                             try {
-                                currFileDate = Long.parseLong(currentVersionZip.split("-")[4].substring(0, 8));
-                                latestFileDate = Long.parseLong(latestFullZip.split("-")[4].substring(0, 8));
+                                currFileDate = Long.parseLong(currentVersionZip.split("-")[5].substring(0, 8));
+                                latestFileDate = Long.parseLong(latestFullZip.split("-")[5].substring(0, 8));
                                 updateAvilable = latestFileDate > currFileDate;
                             } catch (NumberFormatException exception) {
                                 // Just incase someone decides to make up his own zip / build name and F's this up
